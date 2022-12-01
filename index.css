@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 60%;
+    max-height: 90vh;
+    background-color: #615c5c;
+    border-radius: 11px;
+    margin: 8rem auto auto auto;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #c6c1c1;
+}
+
+.title{
+    grid-column: 1/4;
+    padding: 1.5rem;
+    color: #8f8181;
+}
+
+.from{
+    grid-column: 1/2;
+    margin-bottom: 2px;
+    padding: 1.5rem;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.to{
+    grid-column: 3/3;
+    padding: 1.5rem;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.box{
+    border-radius: 11px;
+    box-shadow: -1px -1px #0d0d0f;
+}
+
+.selector{
+    margin: 5px 10px 10px 10px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #9c9191;
+    font-weight: bolder;
+}
+
+#swap{
+    margin: 5px 10px 10px 10px;
+    padding: 0.5rem;
+}
+
+#input_field{
+    grid-column-end: span 3;
+    margin: 5px 10px 10px 10px;
+    padding: 0.5rem;
+    background-color: #9c9191;
+    font-weight: bolder;
+}
+
+#convert-btn{
+    grid-column-end: span 3;
+    margin: 5px 10px 10px 10px;
+    padding: 1.1rem;
+    background-color: rgb(185, 199, 235);
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: rgb(31, 18, 18);
+}
+
+#convert-btn:hover{
+    background-color: #45ef45;
+    transition: 1000ms;
+    cursor: pointer;
+    color: white;
+}
+
+#result{
+    grid-column-end: span 3;
+    margin: 5px 10px 10px 10px;
+    padding: 1.1rem;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .fa-sharp{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    } 
+
+    #swap{
+        margin: auto auto;
+        padding: 0.1rem;
+    }
+
+    .from{
+        display: none;
+        visibility: hidden;
+    }
+
+    .to{
+        display: none;
+        visibility: hidden;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .selector{
+        margin: 10px 10px 10px 10px;
+        padding: 1.1rem;
+        text-align: center;
+        grid-column-end: span 3;
+    }
+
+  }
